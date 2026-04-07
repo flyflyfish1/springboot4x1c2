@@ -213,12 +213,7 @@
 			});
 		},
 		getList() {
-          let autoSortUrl = "";
-          autoSortUrl = "lvyoushuju/autoSort";
-          if(localStorage.getItem('Token')) {
-              autoSortUrl = "lvyoushuju/autoSort2";
-          }
-			this.$http.get(autoSortUrl, {params: {
+			this.$http.get('lvyoushuju/recommend', {params: {
 				page: 1,
 				limit: 8,
 			}}).then(res => {
@@ -233,6 +228,9 @@
 			
 		},
 		toDetail(path, item) {
+			if(path === 'lvyoushujuDetail' && localStorage.getItem('Token')) {
+				this.$http.get(`lvyoushuju/behavior/${item.id}`, {params: {type: 'click'}})
+			}
 			this.$router.push({path: '/index/' + path, query: {detailObj: JSON.stringify(item)}});
 		},
 		moreBtn(path) {

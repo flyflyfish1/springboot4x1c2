@@ -86,6 +86,9 @@ public class LvyoushujuEntity<T> implements Serializable {
 	 */
 					
 	private String xingji;
+	private String jingdianleixing;
+	private Integer redu;
+	private Integer yijuxing;
 	
 	/**
 	 * 经度
@@ -124,6 +127,10 @@ public class LvyoushujuEntity<T> implements Serializable {
 	 */
 					
 	private Integer clicknum;
+	@TableField(exist = false)
+	private String recommendReason;
+	@TableField(exist = false)
+	private String cityTags;
 	
 	
 	@JsonFormat(locale="zh", timezone="GMT+8", pattern="yyyy-MM-dd HH:mm:ss")
@@ -216,6 +223,24 @@ public class LvyoushujuEntity<T> implements Serializable {
 	public String getXingji() {
 		return xingji;
 	}
+	public void setJingdianleixing(String jingdianleixing) {
+		this.jingdianleixing = jingdianleixing;
+	}
+	public String getJingdianleixing() {
+		return jingdianleixing;
+	}
+	public void setRedu(Integer redu) {
+		this.redu = redu;
+	}
+	public Integer getRedu() {
+		return redu;
+	}
+	public void setYijuxing(Integer yijuxing) {
+		this.yijuxing = yijuxing;
+	}
+	public Integer getYijuxing() {
+		return yijuxing;
+	}
 	/**
 	 * 设置：经度
 	 */
@@ -287,6 +312,18 @@ public class LvyoushujuEntity<T> implements Serializable {
 	 */
 	public Integer getClicknum() {
 		return clicknum;
+	}
+	public String getRecommendReason() {
+		return recommendReason;
+	}
+	public void setRecommendReason(String recommendReason) {
+		this.recommendReason = recommendReason;
+	}
+	public String getCityTags() {
+		return cityTags;
+	}
+	public void setCityTags(String cityTags) {
+		this.cityTags = cityTags;
 	}
 
 }

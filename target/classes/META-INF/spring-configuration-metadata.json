@@ -20,32 +20,38 @@
     {
       "name": "hive.initial-size",
       "type": "java.lang.Integer",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": 0
     },
     {
       "name": "hive.max-active",
       "type": "java.lang.Integer",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": 0
     },
     {
       "name": "hive.max-pool-prepared-statement-per-connection-size",
       "type": "java.lang.Integer",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": 0
     },
     {
       "name": "hive.max-wait",
       "type": "java.lang.Integer",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": 0
     },
     {
       "name": "hive.min-evictable-idle-time-millis",
       "type": "java.lang.Integer",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": 0
     },
     {
       "name": "hive.min-idle",
       "type": "java.lang.Integer",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": 0
     },
     {
       "name": "hive.password",
@@ -55,27 +61,32 @@
     {
       "name": "hive.pool-prepared-statements",
       "type": "java.lang.Boolean",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": false
     },
     {
       "name": "hive.test-on-borrow",
       "type": "java.lang.Boolean",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": false
     },
     {
       "name": "hive.test-on-return",
       "type": "java.lang.Boolean",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": false
     },
     {
       "name": "hive.test-while-idle",
       "type": "java.lang.Boolean",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": false
     },
     {
       "name": "hive.time-between-eviction-runs-millis",
       "type": "java.lang.Integer",
-      "sourceType": "com.config.HiveDruidConfig"
+      "sourceType": "com.config.HiveDruidConfig",
+      "defaultValue": 0
     },
     {
       "name": "hive.url",
@@ -95,17 +106,20 @@
     {
       "name": "spark.app-name",
       "type": "java.lang.String",
-      "sourceType": "com.config.SparkConfig"
+      "sourceType": "com.config.SparkConfig",
+      "defaultValue": "mySpark"
     },
     {
       "name": "spark.master",
       "type": "java.lang.String",
-      "sourceType": "com.config.SparkConfig"
+      "sourceType": "com.config.SparkConfig",
+      "defaultValue": "local[*]"
     },
     {
       "name": "spark.spark-home",
       "type": "java.lang.String",
-      "sourceType": "com.config.SparkConfig"
+      "sourceType": "com.config.SparkConfig",
+      "defaultValue": "."
     }
   ],
   "hints": []

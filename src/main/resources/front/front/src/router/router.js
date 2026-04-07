@@ -12,9 +12,12 @@ import NewsDetail from '../pages/news/news-detail'
 import yonghuList from '../pages/yonghu/list'
 import yonghuDetail from '../pages/yonghu/detail'
 import yonghuAdd from '../pages/yonghu/add'
-import lvyoushujuList from '../pages/lvyoushuju/list'
-import lvyoushujuDetail from '../pages/lvyoushuju/detail'
+import lvyoushujuList from '../pages/lvyoushuju/list-enhanced'
+import lvyoushujuDetail from '../pages/lvyoushuju/detail-enhanced'
 import lvyoushujuAdd from '../pages/lvyoushuju/add'
+import recommendList from '../pages/recommend/list'
+import visualizationList from '../pages/visualization/list'
+import rankingList from '../pages/ranking/list'
 import dimingList from '../pages/diming/list'
 import dimingDetail from '../pages/diming/detail'
 import dimingAdd from '../pages/diming/add'
@@ -81,6 +84,18 @@ export default new VueRouter({
 				{
 					path: 'lvyoushujuAdd',
 					component: lvyoushujuAdd
+				},
+				{
+					path: 'recommend',
+					component: recommendList
+				},
+				{
+					path: 'visualization',
+					component: visualizationList
+				},
+				{
+					path: 'ranking',
+					component: rankingList
 				},
 				{
 					path: 'diming',

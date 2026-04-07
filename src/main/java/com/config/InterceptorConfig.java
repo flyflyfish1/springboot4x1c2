@@ -1,5 +1,7 @@
 package com.config;
 
+import java.io.File;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -27,6 +29,8 @@ public class InterceptorConfig extends WebMvcConfigurationSupport{
 	 */
 	@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		String uploadPath = new File(System.getProperty("user.dir"), "upload").getAbsolutePath() + File.separator;
+		registry.addResourceHandler("/upload/**").addResourceLocations("file:" + uploadPath);
 		registry.addResourceHandler("/**")
         .addResourceLocations("classpath:/resources/")
         .addResourceLocations("classpath:/static/")
