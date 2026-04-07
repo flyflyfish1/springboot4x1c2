@@ -1,0 +1,23 @@
+
+城市景观画像系统
+
+环境：java1.8  nodev14.19
+
+mvn spring-boot:run
+
+
+后台路径地址：localhost:8080/springboot4x1c2/admin/dist/index.html
+前台路径地址：localhost:8080/springboot4x1c2/front/dist/index.html 
+
+管理员账号：admin
+管理员密码：admin
+
+
+用户账号1	123456
+用户账号2	123456
+用户账号3	123456
+用户账号4	123456
+
+
+
+

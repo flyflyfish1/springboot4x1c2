@@ -1,0 +1,29 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.jlwl:springboot4x1c2 >----------------------
+[INFO] Building springboot-schema 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from java.net.Releases: https://maven.java.net/content/repositories/releases/org/glassfish/javax.el/maven-metadata.xml
+Downloading from jvnet-nexus-snapshots: https://maven.java.net/content/repositories/snapshots/org/glassfish/javax.el/maven-metadata.xml
+[WARNING] Could not transfer metadata org.glassfish:javax.el/maven-metadata.xml from/to java.net.Releases (https://maven.java.net/content/repositories/releases): PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+[WARNING] Could not transfer metadata org.glassfish:javax.el/maven-metadata.xml from/to jvnet-nexus-snapshots (https://maven.java.net/content/repositories/snapshots): PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ springboot4x1c2 ---
+[INFO] Deleting D:\springboot4x1c2\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ springboot4x1c2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 425 resources
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.745 s
+[INFO] Finished at: 2026-04-07T22:13:27+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:3.1.0:resources (default-resources) on project springboot4x1c2: Failed to copy full contents from D:\springboot4x1c2\src\main\resources\front\front\src\assets\login-bg.jpg to D:\springboot4x1c2\target\classes\front\front\src\assets\login-bg.jpg -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

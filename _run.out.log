@@ -1,0 +1,44 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.jlwl:springboot4x1c2 >----------------------
+[INFO] Building springboot-schema 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.2.2.RELEASE:run (default-cli) > test-compile @ springboot4x1c2 >>>
+Downloading from java.net.Releases: https://maven.java.net/content/repositories/releases/org/glassfish/javax.el/maven-metadata.xml
+Downloading from jvnet-nexus-snapshots: https://maven.java.net/content/repositories/snapshots/org/glassfish/javax.el/maven-metadata.xml
+[WARNING] Could not transfer metadata org.glassfish:javax.el/maven-metadata.xml from/to java.net.Releases (https://maven.java.net/content/repositories/releases): PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+[WARNING] Could not transfer metadata org.glassfish:javax.el/maven-metadata.xml from/to jvnet-nexus-snapshots (https://maven.java.net/content/repositories/snapshots): PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ springboot4x1c2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 425 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ springboot4x1c2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ springboot4x1c2 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\springboot4x1c2\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ springboot4x1c2 ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.2.2.RELEASE:run (default-cli) < test-compile @ springboot4x1c2 <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.2.2.RELEASE:run (default-cli) @ springboot4x1c2 ---
+[INFO] Attaching agents: []
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.878 s
+[INFO] Finished at: 2026-04-07T22:18:19+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.2.2.RELEASE:run (default-cli) on project springboot4x1c2: Could not exec java: Cannot run program "C:\Program Files\Java\jdk-20\bin\java.exe" (in directory "D:\springboot4x1c2"): CreateProcess error=206, 文件名或扩展名太长。 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
